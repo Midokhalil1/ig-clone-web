@@ -22,7 +22,7 @@ const firebaseConfig = {
       // 1. Upload photo to storage bucket
       const filename = values.photo.file.name
       const imageRef = ref(storage, `photos/${filename}`)
-      uploadBytes(imageRef, values.photo.file)
+      uploadBytes(imageRef, values.photo.file.originFileObj)
         .then(() => console.log('upload successful'))
         .catch(err => console.error(err))
       // 2. figure out URL for that photo
