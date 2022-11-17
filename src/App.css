@@ -5,14 +5,30 @@
 }
 
 header {
+  background-color: rgb(89, 1, 212);
+  z-index: 1;
   padding: 1em;
   position: fixed;
   width: 100vw;
   border-bottom: 1px solid rgb(236, 5, 5);
 }
 
+
+
+.photo-feed {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+}
+
+.ant-card {
+  margin-bottom: 32px;
+}
+
+
+
 .App-header {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(208, 154, 219, 0.872);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,4 +46,9 @@ header {
 .fab {
   position: fixed;
   bottom: 24px;
+  color: blueviolet;
+}
+
+.like{
+ background-color: rgba(255, 254, 254, 0.675);
 }
